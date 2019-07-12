@@ -1,2 +1,2 @@
-# scheduling
-Privacy-preserving scheduling system
+# Privacy-Preserving Event Scheduling
+Privacy-preserving event scheduling system
