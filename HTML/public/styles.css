@@ -1,0 +1,471 @@
+
+
+h1{
+  text-align: center;
+  color: white;
+}
+
+h3 {
+  text-align: left;
+  color:white;
+}
+
+header, body {
+  background-image: linear-gradient(to bottom, rgba(55,152,212,0.93) 0%, rgba(55,152,212,0.93) 100%),
+                    url(doodle_background.png);
+}
+
+ul{
+  list-style-type: none;
+  padding: 0;
+  display: table-cell;
+}
+
+.weekend {
+  color: #cc0000;
+}
+
+#tbl {
+  display: table;
+  border-collapse: separate;
+  background: white;
+}
+
+thead {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  vertical-align: baseline;
+  font: inherit;
+}
+
+td, th{
+  text-align: center;
+  vertical-align: middle;
+  margin: 4px auto;
+  border-radius: 100%;
+  display: table-cell;
+}
+
+#continuebox{
+  margin-top: 16px;
+  text-align: right;
+  background: white;
+  border-radius: 8px;
+}
+
+#pagecontent{
+  display: flex;
+  justify-content: center;
+}
+
+#contentbox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+#two_elements{
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: row;
+}
+
+#transparentbox{
+  padding-right: 16px;
+  background: transparent;
+}
+
+#calendarbox{
+  min-width: 300px;
+  min-height: 275px;
+  background: white;
+  border-radius: 3%;
+}
+
+#select_times{
+  display: flex;
+  min-height: 258px;
+  min-width: 300px;
+  flex-direction: column;
+  justify-content: space-between;
+  background: rgba(247,247,247,0.2);
+  border: 1px solid rgba(247,247,247,0.4);
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 16px;
+  border-radius: 3%;
+}
+
+#tbl{
+  border-radius: inherit;
+}
+
+#date_entry{
+  display: block;
+  width: 24px;
+  height: 16px;
+  margin: 4px auto;
+  line-height: 16px;
+}
+
+.input_list{
+  background-color: white;
+  border-bottom: 1px solid gray;
+  justify-content: center;
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+}
+
+.input_container{
+  background-color: white;
+}
+
+.time_input{
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+}
+
+.more_times_button{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  font-size: 15px;
+  min-height: 35px;
+  color: rgb(55, 154, 212);
+  font-weight: bold;
+}
+
+.start_input{
+  border: none;
+  flex: 1;
+  min-height: 35px;
+  font-size: 20px;
+  width: 120px;
+  line-height: normal;
+  color: darkgray;
+  text-align: center;
+}
+
+.seperator{
+  font-weight: 500;
+  font-style: normal;
+  color: gray;
+  font-size: 30px;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+.end_input{
+  border: none;
+  flex: 1;
+  min-height: 35px;
+  font-size: 20px;
+  width: 120px;
+  line-height: normal;
+  color: darkgrey;
+  text-align: center;
+}
+
+.silent_button{
+  border: 1px solid transparent;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  outline: none;
+  overflow: hidden;
+  align-items: flex-start;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+
+.close_button{
+  color: grey;
+  padding-right: 8px;
+  font-weight: bold;
+}
+
+.currentDay{
+  background-color: rgba(55,152,212,0.1);
+}
+
+td.selectable{
+  cursor: pointer;
+}
+
+td.selectable:hover{
+  background-color: lightgray;
+}
+
+td.past{
+  cursor: not-allowed;
+}
+
+td.selected{
+  background: coral;
+  color: white;
+}
+
+td.selected:hover{
+  background-color: coral;
+}
+
+td.whitespace:hover{
+  background-color: inherit;
+}
+
+.scroll_table{
+  background-color: white;
+}
+
+.pick_time_table_column{
+  display: flex;
+  flex-direction: column;
+}
+
+.pick_time_table_row{
+  display: flex;
+  flex-direction: row;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+  border-top: 1px solid grey;
+}
+
+.pick_time_date_box{
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.pick_time_month{
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+
+.pick_time_date{
+  font-weight: bold; 
+  font-size: 36px;
+  margin-bottom: 4px;
+}
+
+.pick_time_day{
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+
+.pick_time_time{
+  font-size: 20px;
+}
+
+#pick_time_container{
+  display: flex;
+  justify-content: center;
+}
+
+.yes_no_maybe_container{
+  display: flex;
+  flex-direction: column;
+  display: block;
+  border-left: 1px solid gray;
+  padding: 10px 180px 10px 0;
+}
+
+.pick_time_option{
+  display: flex;
+  flex-direction: row;
+  padding: 15px 30px 15px 30px;
+}
+
+.pick_time_option:hover{
+  cursor: pointer;
+}
+
+.pick_time_option > div{
+  height: 30px;
+  width: 30px;
+  border: 2px solid black;
+}
+
+.pick_time_option > div + div{
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  margin-left: 15px;
+  margin-top: 5px;
+}
+
+.pick_time_continue_container{
+  border: 1px solid gray;
+  text-align: right;
+}
+
+.pick_time_done{
+  background-color: rgba(55,152,212,0.93);
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 8px;
+  margin: 8px 8px 8px 0;
+  text-align: center;
+  min-height: 50px;
+  min-width: 150px;
+}
+
+.hide_that{
+  display: hidden;
+  width: 0;
+  height: 0;
+  border: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.continuebutton{
+  background-color: #84C33F;
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+  color: white;
+  cursor: pointer;
+  min-height: 50px;
+  min-width: 150px;
+  border-radius: 8px;
+  margin: 8px 8px 8px 0;
+}
+
+#title_input_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  width: 500px;
+  padding: 50px;
+  background-color: white;
+}
+
+#titleinput{
+  margin-bottom: 16px;
+  width: 100%;
+  font-size: 20px;
+}
+
+#adminmail{
+  margin-bottom: 16px;
+  width: 100%;
+  font-size: 15px;
+}
+
+#locationinput{
+  margin-bottom: 16px;
+  width: 100%;
+  font-size: 15px;
+}
+
+#participants{
+  width: 100%;
+  height: 200px;
+  font-size: 15px;
+}
+
+#participants:focus{
+  border: 1px solid red;
+  outline: none;
+}
+
+.input_border{
+  border-bottom: 1px solid grey;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.input_border:focus{
+  border-bottom: 1px solid red;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+}
+
+.button_container{
+  padding-top: 10px;
+  text-align: right;
+  width: 103%;
+}
+
+.control_container{
+  width: 100%;
+}
+
+.inputfield_container{
+  padding: 8px 8px 0 8px;
+}
+
+.accessbutton_container{
+  position: relative;
+  left: 50px;
+}
+
+.accessbutton{
+  background-color: darkorange;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  min-height: 50px;
+}
+
+.result_time_container{
+  background-color: white;
+  justify-content: center;
+  display: flex;
+  margin-left: 33%;
+  margin-right: 33%; 
+}
+
+.result_time_no_box{
+    border-top: 1px solid gray;
+    padding-top: 20px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.result_time_no_box_header{
+   font-weight: bold;
+   margin-bottom: 30px;
+   text-align: center;
+   font-size: 30px;
+   color: red;
+}
+
+.result_time_participant{
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.thanks_content{
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    margin-top: 33%;
+    margin-bottom: 33%;
+}
+
+#login_form{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}

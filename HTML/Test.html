@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+<style>
+table#selections{
+    width: 50%;
+}
+
+table#selections, th, td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid;	
+    border-collapse: collapse;
+}
+
+</style>
+
+<textarea id="hex" cols="60" rows="20"></textarea>
+<button onclick="foo()">Click</button>
+	
+    <script>
+        function foo(){
+            document.getElementById('hex').value = document.getElementById('hex').value.replace(/[\s:]/g, '');
+        }
+    </script>
+</body>
+</html>

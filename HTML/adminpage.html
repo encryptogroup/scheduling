@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+    <title>doodle</title>
+    <link rel="stylesheet" href="public/styles.css" type="text/css">
+</head>
+<body>
+    <h1 id="header">Admin page</h1>
+    <div id="pagecontent">
+        <form>
+            <input id="hidden_participants" type="hidden">
+            <input id="hidden_selected_dates" type="hidden">
+        </form>
+        <div id="title_input_container">
+            <div class="control_container">
+                <textarea id="participants"></textarea>
+            </div>
+            <div class="button_container">
+                <button type="button" class="continuebutton">Commit changes</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function fakeInput(){
+            hiddenParticipants = document.getElementById('hidden_participants');
+            hiddenParticipants.value = '';
+            hiddenParticipants.value += 'oliver.schick92@gmail.com' + '\r\n';
+            hiddenParticipants.value += 'foo@bar.com' + '\r\n';
+            hiddenParticipants.value += 'moo@cow.farm';
+            document.getElementById('participants').value = hiddenParticipants.value;
+        }
+
+        fakeInput();
+
+    </script>
+</body>
+</html>

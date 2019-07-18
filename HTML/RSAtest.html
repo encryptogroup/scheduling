@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+    <script language="JavaScript" type="text/javascript" src="jsbn.js"></script>
+    <script language="JavaScript" type="text/javascript" src="prng4.js"></script>
+    <script language="JavaScript" type="text/javascript" src="rng.js"></script>
+    <script language="JavaScript" type="text/javascript" src="rsa.js"></script>
+</head>
+<body onclick="rng_seed_time()" onkeypress="rng_seed_time()">
+
+<h1>My First Heading</h1>
+<textarea name="modulus" id="modulus" cols="30" rows="10"></textarea>
+<button tyoe="button" onclick="tryit()">Try it!</button>
+
+<script>
+    var modulus = '00a8fd8befae7c8e67699fe771c86e4888656cd379db43b1732960512871d5720c6698843eb9c160b48ca74b65f9930371aad9e432a93f711f85093b15807b9793034ec8423ec6a1fbdff5a2f3aa899b831e44544071d3fb77af2a07d36fc3ac5043d116cf6ababd0082f768eece6558ff0dd9846adb669f1aa805f6928e3cd551dbf41421ad87fe3d0ba0d77145ef503f33bf254229801969f9c2e6ebb3688ac18a9bc3b5a114d74ccb3059ca4ccdf6f8d76af28bf8fc251a29f7510edb9aa1724f449382588421a68dc2e17cd4a7ad945be46d673e8d555e60ad97aa7c43ded4dd14d7243dbfbb40227d84c8f4746ea9f0f9767f7f935d77e449ba56f6bc7a63';
+    var publicExponent = '10001';
+    var privateExponent = '40028a16e788d687e54264707cf309166114afa5e09feb7f2b950828c1b58fd592a702b09fbbd7dd8bc9728dd5d311e2e44c545bbc3003b164baf25e5aa475ed81bb3daf9a07b323acd96637d5c8f9d6d8881941afdc13cc69d509d1d4ebd14135eee52cfbc86ffed99ccd6a67538c3a500cac53ad77599cc7383b05984b02a1b98b3dcf1ef0941f457b5083df835f7ab7f6ecdbdac1cc8648cfa4b6795d7ea1042714773674e2670c129c8336ea724b27166172705bb351a75a9ae6b99bf410434d8bdd2d54c91aff098763bc45ebfb6237d5a2c0ec08038d181a80ab367ba86fe91d52757d66feb5b9f9563f67735fd1593a1e68dd2dee1c384ad27ff33701';
+    function tryit(){
+        
+        var RSA = new RSAKey();
+        RSA.setPublic(modulus, publicExponent);
+        var e = RSA.encrypt(document.getElementById('modulus').value);
+        alert(e);
+    }
+</script>
+</body>
+</html>

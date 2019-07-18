@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+  <title>sec_doodle</title>
+  <link rel="stylesheet" href="styles.css" type="text/css">
+  <script language="Javascript" type="text/javascript" src="create_poll.js"></script>
+</head>
+
+<body>
+  
+  <h1 id="header">Please input your data</h1><br>
+  <div id="pagecontent">
+    <div id="contentbox"> 
+      <div id="continuebox">
+        <form id="continueform" method="post">
+          <input id="hidden_dates" name="data" type="hidden">
+          <input id="hidden_title" name="title" type="hidden">
+          <input id="hidden_admin" name="admin" type="hidden">
+          <input id="hidden_location" name="location" type="hidden">
+          <input id="hidden_particiants" name="participants" type="hidden">
+        </form>
+        <input class="continuebutton" type="button" value="Continue" onclick="cont()">
+      </div>
+    </div>
+  </div>
+  <script> 
+    initialize_start_poll();
+  </script>
+</body>
+
+</html>
