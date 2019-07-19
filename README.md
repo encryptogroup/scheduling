@@ -1,7 +1,7 @@
 # Privacy-Preserving Event Scheduling
 Privacy-preserving event scheduling system
 
-By *Ágnes Kiss*, *Oliver Schick* and *Thomas Schneider* ([ENCRYPTO](http://www.encrypto.de), TU Darmstadt) in [SECRYPT'19](http://www.secrypt.icete.org/). Paper available [here](http://encrypto.de/papers/KSS19.pdf).
+By *Ágnes Kiss*, *Oliver Schick* and *Thomas Schneider* ([ENCRYPTO](http://www.encrypto.de), TU Darmstadt) in [SECRYPT'19](http://www.secrypt.icete.org/). Paper available [here](http://encrypto.de/papers/KSS19.pdf), poster available [here](https://encrypto.de/papers/KSS19Poster.pdf).
 
 ### Features
 ---
